@@ -1,4 +1,4 @@
-#JumpStart_templates is my collection of templates for the [jumpstart]("http://rubygems.org/gems/jumpstart") gem
+#JumpStart_templates is my collection of templates for the [jumpstart]("http://github.com/i0n/jumpstart") gem
 
 Jumpstart is a gem for quickly creating projects.
 It does this by running options from a YAML file that you can create, or you can let the gem do it for you.
@@ -17,4 +17,3 @@ It's dead easy to do.
 **Copyright**
 
 Copyright (c) 2010 i0n. See LICENSE for details.
-
