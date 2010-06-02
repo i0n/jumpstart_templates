@@ -1,0 +1,28 @@
+## MAC OS
+.DS_Store
+
+## TEXTMATE
+*.tmproj
+tmtags
+
+## EMACS
+*~
+\#*
+.\#*
+
+## VIM
+*.swp
+
+## PROJECT::GENERAL
+coverage
+rdoc
+pkg
+*.gem
+
+## PROJECT::SPECIFIC
+
+## Bundler
+vendor/gems/gems 
+vendor/gems/specifications
+vendor/gems/doc
+vendor/gems/environment.rb

@@ -1,0 +1,36 @@
+!!! 5
+%html
+  %head   
+    %meta{ :content => "text/html;charset=UTF-8", "http-equiv" => "content-type" }
+    %meta{:name => 'description', :content => ""}
+    %meta{:name => 'keywords', :content => ''}    
+    %title
+      = @title
+    %link{ :rel => "stylesheet", :type => "text/css", :href => "stylesheets/global.css", :media => "all"}
+    %link{ :rel => "stylesheet", :type => "text/css", :href => "stylesheets/screen.css", :media => "screen"}
+    %link{ :rel => "stylesheet", :type => "text/css", :href => "stylesheets/print.css", :media => "print"}
+    %link{ :rel => "stylesheet", :type => "text/css", :href => "stylesheets/handheld.css", :media => "handheld"}
+    /
+      [if IE 7]>
+      %link{ :rel => "stylesheet", :type => "text/css", :href => "stylesheets/ie.css", :media => "screen, projection"}
+      %link{ :rel => "stylesheet", :type => "text/css", :href => "stylesheets/print.css", :media => "print"}
+      <![endif]
+  %body
+    .header
+      .container
+        .rivup_logo
+    = yield
+    .clear
+    .footer
+      .container
+        .footer_content
+          %p
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          %p
+            = Time.now.strftime("Page generated at: %I:%M%p on %A %d %B %Y")
+          %p
+            Site built with 
+            %a{:href => "http://www.sinatrarb.com/"}
+              Sinatra
+            = "version: #{Sinatra::VERSION}"
+    

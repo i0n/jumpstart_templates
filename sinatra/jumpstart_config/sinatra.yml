@@ -1,0 +1,25 @@
+---
+
+:install_path: /Users/i0n/Sites
+
+:install_command: sinatra
+
+:install_command_args:
+
+:run_after_install_command:
+
+:remove_files:
+
+:run_after_jumpstart:
+  - capify .
+  - git init
+  - git add .
+  - git commit -q -v -a -m "Initial commit"
+  
+:replace_strings:
+  - :target_path:
+    :symbols:
+      :project_name: name
+
+:local_nginx_conf: /usr/local/nginx/conf/nginx.conf
+  
