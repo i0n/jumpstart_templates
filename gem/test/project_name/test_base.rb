@@ -2,7 +2,7 @@ require 'helper'
 
 class TestJumpstartBase < Test::Unit::TestCase
 
-  context "Testing PROJECT_NAME::Base\n" do
+  context "Testing PROJECT_NAME_CLASS::Base\n" do
 
     setup do
       
@@ -12,7 +12,7 @@ class TestJumpstartBase < Test::Unit::TestCase
 
     end
 
-    context "Tests for the PROJECT_NAME::Base#intialize instance method. \n" do
+    context "Tests for the PROJECT_NAME_CLASS::Base#intialize instance method. \n" do
 
     end
 

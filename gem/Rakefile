@@ -30,21 +30,21 @@ namespace :bump do
   
   desc "Bumps major version number by 1"
   task :major do
-    PROJECT_NAME.bump_version_major
+    PROJECT_NAME_CLASS.bump_version_major
     git_actions
     rubygems_actions
   end
 
   desc "Bumps minor version number by 1"
   task :minor do
-    PROJECT_NAME.bump_version_minor
+    PROJECT_NAME_CLASS.bump_version_minor
     git_actions
     rubygems_actions
   end
 
   desc "Bumps patch version number by 1"
   task :patch do
-    PROJECT_NAME.bump_version_patch
+    PROJECT_NAME_CLASS.bump_version_patch
     git_actions
     rubygems_actions
   end
@@ -52,20 +52,20 @@ namespace :bump do
 end
 
 task :version do
-  puts "\nPROJECT_NAME Version: #{PROJECT_NAME::VERSION}"
+  puts "\nPROJECT_NAME Version: #{PROJECT_NAME_CLASS::VERSION}"
 end
 
 def git_actions
-  Dir.chdir("#{PROJECT_NAME::ROOT_PATH}")
+  Dir.chdir("#{PROJECT_NAME_CLASS::ROOT_PATH}")
   system "git add ."
-  system "git commit -v -a -m 'commit for version: #{PROJECT_NAME.version}'"
-  system "git tag #{PROJECT_NAME.version}"
+  system "git commit -v -a -m 'commit for version: #{PROJECT_NAME_CLASS.version}'"
+  system "git tag #{PROJECT_NAME_CLASS.version}"
   system "git push"
   system "git push --tags"
 end
 
 def rubygems_actions
-  Dir.chdir("#{PROJECT_NAME::ROOT_PATH}")
+  Dir.chdir("#{PROJECT_NAME_CLASS::ROOT_PATH}")
   system "gem build PROJECT_NAME.gemspec"
-  system "gem push PROJECT_NAME-#{PROJECT_NAME.version}.gem"      
+  system "gem push PROJECT_NAME-#{PROJECT_NAME_CLASS.version}.gem"      
 end

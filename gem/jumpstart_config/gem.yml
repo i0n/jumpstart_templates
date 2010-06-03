@@ -1,5 +1,4 @@
 ---
-
 :install_path: /Users/i0n/Sites
     
 :run_after_jumpstart:
@@ -11,10 +10,7 @@
   - :target_path: /bin/project_name
     :symbols:
       :project_name: name
-  -:target_path: /project_name.gemspec
-      :symbols:
-        :project_name: name
-  - :target_path: /lib/project_name
+  - :target_path: /project_name.gemspec
     :symbols:
       :project_name: name
   - :target_path: /lib/project_name/base.rb
