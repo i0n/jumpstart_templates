@@ -52,7 +52,7 @@ namespace :bump do
 end
 
 task :version do
-  puts "\nPROJECT_NAME Version: #{PROJECT_NAME_CLASS::VERSION}"
+  puts "\nPROJECT_NAME_CLASS Version: #{PROJECT_NAME_CLASS::VERSION}"
 end
 
 def git_actions

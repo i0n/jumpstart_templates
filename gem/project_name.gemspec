@@ -6,7 +6,7 @@ require 'PROJECT_NAME'
  
 Gem::Specification.new do |s|
   s.name        = "PROJECT_NAME"
-  s.version     = PROJECT_NAME.version
+  s.version     = PROJECT_NAME_CLASS.version
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Ian Alexander Wood (i0n)"]
   s.email       = ["ianalexanderwood@gmail.com"]
