@@ -1,3 +1,4 @@
+require 'rbconfig'
 require 'rubygems'
 require 'fileutils'
 require 'yaml'
