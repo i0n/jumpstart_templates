@@ -1,4 +1,4 @@
-module PROJECT_NAME
+module PROJECT_NAME_CLASS
   class Base
 
     # Accessor methods to make testing input or output easier.
