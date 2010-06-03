@@ -21,6 +21,9 @@ module PROJECT_NAME_CLASS
       @output = $stdout
     end
 
+    def start
+      
+    end
 
   end
 end

@@ -1,8 +1,6 @@
-require 'rbconfig'
 require 'rubygems'
 require 'fileutils'
 require 'yaml'
-
 require 'PROJECT_NAME/base'
 
 module PROJECT_NAME_CLASS
