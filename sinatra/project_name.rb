@@ -5,13 +5,24 @@ require 'sinatra'
 require 'haml'
 require 'sass'
 require 'dm-core'
-DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/log/rivup.db")
+DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/log/PROJECT_NAME.db")
 set :public, 'public'
 
 configure :production do
   set :sass, {:style => :compressed }
   set :haml, {:ugly => true}
 end
+
+##################### DataMapper
+
+class ClickTracker
+  include DataMapper::Resource
+  property :id, Serial
+  property :counter, Integer, :default => 0
+end
+
+# Create/Upgrade/Migrate database automatically
+DataMapper.auto_upgrade!
 
 ##################### Sass
 
