@@ -17,9 +17,17 @@
   - git commit -q -v -a -m "Initial commit"
   
 :replace_strings:
-  - :target_path:
+  - :target_path: /config/deploy.rb
     :symbols:
       :project_name: name
+  - :target_path: /config.ru
+    :symbols:
+      :project_name: name
+  - :target_path: /project_name.rb
+    :symbols:
+      :project_name: name
+
+
 
 :local_nginx_conf: /usr/local/nginx/conf/nginx.conf
   
