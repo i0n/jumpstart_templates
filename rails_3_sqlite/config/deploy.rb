@@ -31,7 +31,12 @@ namespace :deploy do
     desc "Create database for the production environment using the servers rake db:setup task.\n Loads the schema, and initializes with the seed data"
     task :setup do
       run "cd #{current_path}; rake db:setup RAILS_ENV=production"
-    end 
+    end
+    
+    desc "Seeds the production database using db/seeds.rb"
+    task :seed do
+      run "cd #{current_path}; rake db:seed RAILS_ENV=production"
+    end
         
     desc "Populates the production database using lib/tasks/populate which I will use as my own internal convention for this process"
     task :populate do
