@@ -1,3 +1,5 @@
+require "#{Rails.root}/lib/development_mail_interceptor.rb"
+
 # Settings for using gmail in development
 
 # ActionMailer::Base.smtp_settings = {
