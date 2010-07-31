@@ -1,0 +1,115 @@
+/* PAGE ELEMENTS */
+
+h1 {
+
+}
+
+h2, h3 {
+
+}
+
+h4, h5, h6 {
+
+}
+
+p {
+
+}
+
+a {
+  cursor: pointer;
+}
+
+a:hover {
+
+}
+
+a:visited {
+
+}
+
+ul, ol {
+
+}
+
+strong {
+  font-weight: bold; 
+}
+
+em {
+  font-style: italic; 
+}
+
+legend {
+
+}
+
+.clear {
+  clear: both; 
+}
+
+.clear_left {
+  clear: left;
+}
+
+.clear_right {
+  clear: right;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
+}
+
+.spacer1 {
+  line-height: 1em;
+  margin: 1em 0 0;
+}
+
+.spacer2 {
+  
+}
+
+form {
+
+}
+
+label {
+
+}
+
+input {
+  
+}
+  
+input[type="text"] {
+
+}
+
+textarea {
+
+}
+
+button {
+  cursor: pointer;
+}
+
+/* HEADER */
+
+header {
+  display: block;
+}
+
+/* NAV */
+
+nav {
+  display: block;
+}
+
+/* FOOTER */
+
+footer {
+  display: block;
+}
