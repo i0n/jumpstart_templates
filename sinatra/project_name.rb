@@ -5,7 +5,15 @@ require 'sinatra'
 require 'haml'
 require 'sass'
 require 'dm-core'
-DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/log/PROJECT_NAME.db")
+require 'dm-migrations'
+
+# Setup Datamapper connection to Sqlite3 database
+DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/log/rivup.db")
+
+# Sets the root path for the app. REQUIRED!
+set :root, File.dirname(__FILE__)
+
+# Sets up the public folder
 set :public, 'public'
 
 configure :production do
