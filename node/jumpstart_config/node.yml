@@ -65,8 +65,6 @@
 #       :project_name: name_of_my_app
 #       :womble: uncle_bulgaria
 :replace_strings:
-  - :target_path:
-    :symbols:
       
 ## Can be omitted or left blank.
 # Add extra commands that you want to run after templates have been parsed for string replacement.
