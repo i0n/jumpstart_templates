@@ -1,0 +1,15 @@
+gem 'haml-rails'
+gem 'jquery-rails'
+gem 'authlogic'
+gem 'paperclip'
+
+group :development do
+  # gem "rails-footnotes"
+  gem 'rails3-generators'
+  gem 'populator'
+  gem 'faker'
+end
+
+group :test do
+  gem 'shoulda'
+end
