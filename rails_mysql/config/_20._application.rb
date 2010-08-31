@@ -4,3 +4,5 @@
       g.test_framework :shoulda
       g.fallbacks[ :shoulda ] = :test_unit 
     end
+
+    config.autoload_paths += %W(#{Rails.root}/lib)
