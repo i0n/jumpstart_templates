@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.homepage    = "http://github.com/i0n/PROJECT_NAME"
   s.summary     = ""
   s.description = ""
-  s.required_rubygems_version = ">= 1.3.6" 
+  s.required_rubygems_version = ">= 1.3.7" 
   s.add_development_dependency "shoulda"
   s.add_development_dependency "mocha"
   s.files        = Dir.glob("{bin,config,lib,test}/**/*") + %w(LICENSE Rakefile README.rdoc)
