@@ -3,13 +3,9 @@ gem 'jquery-rails'
 gem 'authlogic'
 gem 'paperclip'
 
-group :development do
-  # gem "rails-footnotes"
+group :development, :test do
   gem 'rails3-generators'
-  gem 'populator'
-  gem 'faker'
-end
-
-group :test do
   gem 'shoulda'
+  gem 'faker'
+  gem 'populator'
 end

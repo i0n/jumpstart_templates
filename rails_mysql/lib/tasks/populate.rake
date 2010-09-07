@@ -4,23 +4,9 @@ namespace :db do
   task :populate => :environment do
     require 'populator'
     require 'faker'
-    require 'action_controller/test_process'
-    
-    # [User, Subscription, Valuation].each(&:delete_all)
-        
+ 
     #####################  CREATE USERS  #####################
-   
-    # User.populate 1 do |admin|
-    #   admin.login = "ian"
-    #   admin.name = "Ian Alexander Wood"
-    #   admin.email = "ianalexanderwood@gmail.com"
-    #   admin.role = "admin"
-    #   admin.crypted_password = "8010530181ee423288e72b2a45d9bf045ed97be6"
-    #   admin.salt = "7823cecd5bcd10b8d86df120d11240e4c35a630b"
-    #   admin.activation_code = nil
-    #   admin.activated_at = Time.now
-    # end
-        
+           
     # @new_users = []
     # 
     # 200.times do
