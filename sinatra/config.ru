@@ -1,8 +1,6 @@
 require 'rubygems'
 require 'sinatra'
-require File.join(File.dirname(__FILE__), 'PROJECT_NAME') 
 require 'sass/plugin/rack'
+require File.join(File.dirname(__FILE__), 'rivup')
 use Sass::Plugin::Rack
 run Sinatra::Application
-
-
