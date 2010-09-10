@@ -1,6 +1,6 @@
 require 'helper'
 
-class TestJumpstartBase < Test::Unit::TestCase
+class TestPROJECT_NAME_CLASSBase < Test::Unit::TestCase
 
   context "Testing PROJECT_NAME_CLASS::Base\n" do
 
