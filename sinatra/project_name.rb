@@ -4,11 +4,11 @@ require 'rubygems'
 require 'sinatra'
 require 'haml'
 require 'sass'
-require 'dm-core'
-require 'dm-migrations'
+# require 'dm-core'
+# require 'dm-migrations'
 
 # Setup Datamapper connection to Sqlite3 database
-DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/log/rivup.db")
+# DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/log/rivup.db")
 
 # Sets the root path for the app. REQUIRED!
 set :root, File.dirname(__FILE__)
@@ -23,14 +23,14 @@ end
 
 ##################### DataMapper
 
-class ClickTracker
-  include DataMapper::Resource
-  property :id, Serial
-  property :counter, Integer, :default => 0
-end
+# class ClickTracker
+#   include DataMapper::Resource
+#   property :id, Serial
+#   property :counter, Integer, :default => 0
+# end
 
 # Create/Upgrade/Migrate database automatically
-DataMapper.auto_upgrade!
+# DataMapper.auto_upgrade!
 
 ##################### Sass
 
