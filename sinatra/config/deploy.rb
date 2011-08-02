@@ -50,6 +50,13 @@ namespace :deploy do
     \"
     "
   end
+
+  desc "Create bare remote git repo then add remote origin to local git repo and push to remote"
+  task :git do
+    run "cd /home/#{user}/git; mkdir #{application}.git; cd #{application}.git; git init --bare"
+    `git remote add origin ssh://#{user}@#{domain}/~/git/#{application}.git`
+    `git push origin master`
+  end
     
 end
 
